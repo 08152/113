@@ -1,0 +1,10 @@
+{
+    "lowercase": true,
+    "special_tokens": {
+        "pad": "<PAD>",
+        "unknown": "<UNK>",
+        "begin_of_sentence": "<BOS>",
+        "end_of_sentence": "<EOS>"
+    },
+    "vocabulary_file": "vocabulary.json"
+}
