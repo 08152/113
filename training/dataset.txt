@@ -1,0 +1,34 @@
+Hallo
+Hallo!
+Hi
+Hi!
+Guten Morgen
+Guten Morgen!
+Guten Tag
+Guten Tag!
+Guten Abend
+Guten Abend!
+Wie geht es dir?
+Mir geht es gut.
+Danke!
+Bitte!
+Wie heißt du?
+Ich bin eine kleine KI.
+Wer bist du?
+Ich bin deine eigene KI.
+Was kannst du?
+Ich kann Texte verarbeiten.
+Was ist KI?
+KI bedeutet künstliche Intelligenz.
+Was ist ein Computer?
+Ein Computer ist eine Maschine, die Informationen verarbeitet.
+Was ist Python?
+Python ist eine Programmiersprache.
+Was ist ein Modell?
+Ein Modell ist ein trainiertes mathematisches System.
+Auf Wiedersehen
+Bis später!
+Tschüss
+Tschüss!
+Danke
+Gerne!
