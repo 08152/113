@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine eigene KI</title>
+
+    <title>Meine KI</title>
 
     <style>
         * {
@@ -15,170 +16,105 @@
             font-family: Arial, sans-serif;
             background: #111;
             color: white;
+            height: 100vh;
             display: flex;
-            justify-content: center;
-            min-height: 100vh;
+            flex-direction: column;
         }
 
-        .app {
-            width: 100%;
-            max-width: 900px;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
+        header {
+            padding: 16px 20px;
+            border-bottom: 1px solid #333;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         #chat {
-            height: 500px;
+            flex: 1;
             overflow-y: auto;
-            background: #1c1c1c;
-            border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .message {
-            padding: 12px 15px;
-            margin: 8px 0;
-            border-radius: 12px;
             max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 14px;
+            line-height: 1.4;
             white-space: pre-wrap;
         }
 
         .user {
+            align-self: flex-end;
             background: #333;
-            margin-left: auto;
         }
 
         .ai {
+            align-self: flex-start;
             background: #222;
-            border: 1px solid #444;
-            margin-right: auto;
         }
 
-        .input-row {
+        #inputArea {
             display: flex;
             gap: 10px;
+            padding: 15px;
+            border-top: 1px solid #333;
         }
 
-        input,
-        textarea,
-        select,
-        button {
-            font-family: inherit;
+        #input {
+            flex: 1;
+            padding: 13px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            background: #1b1b1b;
+            color: white;
+            outline: none;
             font-size: 16px;
         }
 
-        #messageInput {
-            flex: 1;
-            padding: 14px;
-            border-radius: 10px;
-            border: none;
-            outline: none;
-        }
-
-        button {
-            padding: 14px 18px;
+        #send {
+            padding: 0 20px;
             border: none;
             border-radius: 10px;
-            cursor: pointer;
             background: white;
             color: black;
             font-weight: bold;
+            cursor: pointer;
         }
 
-        .training {
-            margin-top: 20px;
-            padding: 15px;
-            background: #1c1c1c;
-            border-radius: 15px;
-        }
-
-        textarea {
-            width: 100%;
-            min-height: 80px;
-            resize: vertical;
-            margin-top: 8px;
-            padding: 10px;
-            border-radius: 10px;
-            border: none;
-        }
-
-        select {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 10px;
-            border: none;
-        }
-
-        #status {
-            margin-top: 10px;
-            color: #aaa;
-            font-size: 14px;
+        #send:hover {
+            background: #ddd;
         }
     </style>
 </head>
 
 <body>
 
-<div class="app">
+    <header>
+        Meine KI
+    </header>
 
-    <h1>🤖 Meine eigene KI</h1>
-
-    <div id="chat">
+    <main id="chat">
         <div class="message ai">
-            Hallo! Ich bin deine eigene kleine KI. Schreib mir etwas.
+            Hallo! Ich bin deine eigene KI.
         </div>
-    </div>
+    </main>
 
-    <div class="input-row">
+    <div id="inputArea">
         <input
-            id="messageInput"
+            id="input"
             type="text"
-            placeholder="Schreibe etwas..."
+            placeholder="Schreibe eine Nachricht..."
             autocomplete="off"
         >
-        <button id="sendButton">Senden</button>
+
+        <button id="send">
+            Senden
+        </button>
     </div>
 
-    <div class="training">
-
-        <h2>KI trainieren</h2>
-
-        <label>Neue Frage:</label>
-
-        <textarea
-            id="trainQuestion"
-            placeholder="z. B. Wie heißt du?"
-        ></textarea>
-
-        <label>Antwort:</label>
-
-        <textarea
-            id="trainAnswer"
-            placeholder="z. B. Ich bin deine eigene KI."
-        ></textarea>
-
-        <button id="trainButton">
-            KI trainieren
-        </button>
-
-        <button id="resetButton">
-            Training zurücksetzen
-        </button>
-
-        <div id="status">
-            KI wird geladen...
-        </div>
-
-    </div>
-
-</div>
-
-<script type="module" src="app.js"></script>
+    <script type="module" src="app.js"></script>
 
 </body>
 </html>
