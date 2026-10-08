@@ -1,0 +1,12 @@
+{
+  "name": "meine-eigene-ki",
+  "version": "1.0.0",
+  "description": "Eine kleine eigene KI mit HTML und JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
